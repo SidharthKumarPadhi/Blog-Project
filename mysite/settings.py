@@ -23,11 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&)1*gk=k@*dap3!12hqksz8zoqo$$)ue=nwsu_$x(g-oja^uhh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'blogchamber.herokuapp.com']
-
-DISABLE_COLLECTSTATIC = 1
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -131,7 +129,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # E-mail
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'djangodeveloper69@gmail.com'
-EMAIL_HOST_PASSWORD = 'DjangoFrame'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
