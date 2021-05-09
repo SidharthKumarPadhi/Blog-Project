@@ -20,6 +20,8 @@ from django.views.static import serve
 from django.conf.urls import url
 from django.conf import settings
 urlpatterns = [
+
+    path('', include('blog.urls', namespace='blog')),
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls', namespace='blog')),
 
